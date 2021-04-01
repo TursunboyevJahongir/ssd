@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Actions\First\GetCostsAction;
+use App\Http\Actions\First\GetIncomesAction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group(['prefix' => 'first'], function () {
+    Route::get('/incomes/{date?}', GetIncomesAction::class)->name('incomes');
+    Route::get('/costs/{date?}', GetCostsAction::class)->name('costs');
 });

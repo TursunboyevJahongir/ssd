@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    135135
+    Home
 @endsection
 
 @section('content')
@@ -35,7 +35,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                            <a href="{{route('incomes')}}" class="btn btn-dark">Incomes</a>
+                            <a href="{{route('incomes')}}" class="btn btn-dark ">costs</a>
                         </div>
                     </div>
                 </div>
