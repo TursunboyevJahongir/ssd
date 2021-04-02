@@ -33,10 +33,10 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card bg-info">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="{{route('incomes')}}" class="btn btn-dark">Incomes</a>
-                            <a href="{{route('incomes')}}" class="btn btn-dark ">costs</a>
+                            <h5 class="card-title">(Front + Backend)</h5>
+                            <p class="card-text">Bir insonning daromadi va xarajatlarini hisoblab berish </p>
+                            <a href="{{route('incomes')}}" class="btn btn-dark">Daromad</a>
+                            <a href="{{route('costs')}}" class="btn btn-dark ">Xarajatlar</a>
                         </div>
                     </div>
                 </div>

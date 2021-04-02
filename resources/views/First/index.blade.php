@@ -5,7 +5,10 @@
 
 @section('content')
 
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('home')}}"><i class="fas fa-home"></i></a>
+        </li>
         <li class="nav-item">
             <a class="nav-link active" href="{{route('incomes')}}">Incomes</a>
         </li>
