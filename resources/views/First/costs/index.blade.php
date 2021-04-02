@@ -17,6 +17,41 @@
         </li>
     </ul>
     <h1>{{$title}}</h1>
+
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="container" action="{{route('add.cost')}}" method="post">
+                    @csrf
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{{$title}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail2">Name</label>
+                            <input type="text" class="form-control" id="exampleDropdownFormEmail2" name="name" placeholder="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword2">Price</label>
+                            <input type="number" name="price" class="form-control" id="exampleDropdownFormPassword2"
+                                   placeholder="price" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="container">
         <div class="card">
 
@@ -55,10 +90,10 @@
                     </div><!-- /.col-lg-6 -->
 
                     <div class="col-1">
-                        <a href="13513" type="button"
-                           class="btn btn-outline-success float-left btn-lg"
-                           data-toggle="tooltip" title="новый"> <i class="fa fa-plus"></i>
-                        </a>
+                        <button type="button"
+                                class="btn btn-outline-success float-left btn-lg"
+                                title="новый" data-toggle="modal" data-target="#add"><i class="fa fa-plus"></i>
+                        </button>
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
             </div>

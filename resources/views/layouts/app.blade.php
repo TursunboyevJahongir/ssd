@@ -388,9 +388,9 @@
                 color: rgba(203, 213, 224, var(--text-opacity))
             }
         }
-        @yield('css')
-    </style>
 
+    </style>
+    @yield('css')
     <style>
         body {
             font-family: 'Nunito', sans-serif;

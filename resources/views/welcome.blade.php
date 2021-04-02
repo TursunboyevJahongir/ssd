@@ -36,7 +36,7 @@
                             <h5 class="card-title">(Front + Backend)</h5>
                             <p class="card-text">Bir insonning daromadi va xarajatlarini hisoblab berish </p>
                             <a href="{{route('incomes')}}" class="btn btn-dark">Daromad</a>
-                            <a href="{{route('costs')}}" class="btn btn-dark ">Xarajatlar</a>
+                            <a href="{{route('costs')}}" class="btn btn-dark ">Xarajat</a>
                         </div>
                     </div>
                 </div>
