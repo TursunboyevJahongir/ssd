@@ -5,12 +5,12 @@
 
 @section('content')
 
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" style="background-color: #e6f5e4">
         <li class="nav-item">
-            <a class="nav-link active" href="{{route('incomes')}}">Incomes</a>
+            <a class="nav-link" href="{{route('incomes')}}">Incomes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{route('costs')}}">Costs</a>
+            <a class="nav-link active" href="{{route('costs')}}">Costs</a>
         </li>
     </ul>
     <h1>{{$title}}</h1>
@@ -31,7 +31,7 @@
                                     <input class="form-control" type="datetime-local" name="end_date"
                                            value="{{$end_date}}"></div>
                                 <div class="col-md-1">
-                                    <button class="btn btn-outline-danger pro-button w-100">Go</button>
+                                    <button class="btn btn-outline-danger pro-button">Go</button>
                                 </div>
 
                                 <div class="col-md-2 btn-group">
@@ -44,12 +44,6 @@
                                     <button type="button"
                                             class="btn btn{{$date == 'month' ?"":"-outline"}}-danger pro-button"
                                             onclick="month()">Month
-                                    </button>
-                                </div>
-                                <div class="col-md-1">
-                                    <button type="button"
-                                            class="btn btn{{$date == 'pension' ?"":"-outline"}}-warning pro-button"
-                                            onclick="pension()">Pension
                                     </button>
                                 </div>
 
@@ -91,7 +85,7 @@
                     </tbody>
                     <tfoot>
 
-                    @foreach($incomes as $num => $item)
+                    @foreach($costs as $num => $item)
                         <tr>
                             <td>{{$item->id}}</td>
                             <td>
@@ -107,7 +101,7 @@
 
                 </table>
                 <div class="d-flex justify-content-center" id="myformid">
-                    {!! $incomes->appends($_GET)->links() !!}
+                    {!! $costs->appends($_GET)->links() !!}
                 </div>
             </div>
             <!-- /.card-body -->
@@ -120,27 +114,19 @@
 @endsection
 @section('js')
     <script>
-        function pension() {
-            if ({{$date == 'pension' ? 1:0}})
-                window.location.assign("{{route('incomes')}}")
-            else {
-                window.location.assign("{{route('incomes',['date'=>'pension'])}}")
-            }
-        }
-
         function today() {
             if ({{$date == 'today' ? 1:0}})
-                window.location.assign("{{route('incomes')}}")
+                window.location.assign("{{route('costs')}}")
             else {
-                window.location.assign("{{route('incomes',['date'=>'today'])}}")
+                window.location.assign("{{route('costs',['date'=>'today'])}}")
             }
         }
 
         function month() {
             if ({{$date == 'month' ? 1:0}})
-                window.location.assign("{{route('incomes')}}")
+                window.location.assign("{{route('costs')}}")
             else {
-                window.location.assign("{{route('incomes',['date'=>'month'])}}")
+                window.location.assign("{{route('costs',['date'=>'month'])}}")
             }
         }
     </script>

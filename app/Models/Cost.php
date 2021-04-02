@@ -14,14 +14,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $price
  * @property IncomeEnum $type
  */
-class Income extends Model
+class Cost extends Model
 {
     use HasFactory;
 
     protected array $fillable = [
         'name',
         'price',
-        'type',
     ];
 
     /**

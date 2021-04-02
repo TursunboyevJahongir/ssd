@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899caaba-8bdd-47f0-98f5-786beba55c3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Enums/IncomeEnum.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Actions/First/GetCostsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Actions/First/GetIncomesAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Cost.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/First/costs/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/First/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ssd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ssd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Income.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Income.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/meFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CostFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -149,6 +144,16 @@
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/spatie/enum" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qVHOf0UuGzKauUbkm5lFO6McJE" />
@@ -160,13 +165,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Actions/First" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/factories" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\database\factories" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Models" />
       <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Http\Actions\First" />
       <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\resources\views\First\costs" />
     </key>
@@ -181,7 +189,8 @@
       <updated>1617157813569</updated>
       <workItem from="1617157819548" duration="1114000" />
       <workItem from="1617161219810" duration="2248000" />
-      <workItem from="1617199971674" duration="35322000" />
+      <workItem from="1617199971674" duration="37706000" />
+      <workItem from="1617331332965" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="add layout, and welcome php">
       <created>1617245889928</created>
@@ -190,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617245889929</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added Incomes index">
+      <created>1617289101695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617289101696</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added Incomes">
+      <created>1617289136634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617289136634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,9 +229,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add layout, and welcome php" />
-    <option name="LAST_COMMIT_MESSAGE" value="add layout, and welcome php" />
+    <MESSAGE value="added Incomes index" />
+    <MESSAGE value="added Incomes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Incomes" />
   </component>
 </project>
