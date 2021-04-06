@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Actions\First;
+namespace App\Http\Actions;
 
 use App\Http\Requests\AddCostRequest;
 use App\Models\Cost;

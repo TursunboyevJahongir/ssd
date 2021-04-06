@@ -34,7 +34,7 @@
                     <div class="card bg-info">
                         <div class="card-body">
                             <h5 class="card-title">(Front + Backend)</h5>
-                            <p class="card-text">Bir insonning daromadi va xarajatlarini hisoblab berish </p>
+                            <p class="card-text">1)Bir insonning daromadi va xarajatlarini hisoblab berish </p>
                             <a href="{{route('incomes')}}" class="btn btn-dark">Daromad</a>
                             <a href="{{route('costs')}}" class="btn btn-dark ">Xarajat</a>
                         </div>
@@ -43,9 +43,10 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card bg-warning">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                            <h5 class="card-title">(Backend & Front)</h5>
+                            <p class="card-text">2)	Aholi qidiruv tizimi va ro’yhati </p>
+                            <br>
+                            <a href="{{route('users.from.region')}}" class="btn btn-dark">ko'rish</a>
                         </div>
                     </div>
                 </div>

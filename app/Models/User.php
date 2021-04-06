@@ -2,24 +2,38 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Enums\UsersGenderEnum;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+/**
+ * Class Income
+ * @package App\Models
+ * @property int $id
+ * @property string $full_name
+ * @property string $first_name
+ * @property string $last_name
+ * @property integer $age
+ * @property Carbon $date_birth
+ * @property UsersGenderEnum $gender
+ */
+class User extends Model
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
+    protected array $fillable = [
+        'first_name',
+        'last_name',
+        'gender',
+        'date_birth',
     ];
 
     /**
@@ -28,8 +42,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
-        'remember_token',
+        'updated_at',
     ];
 
     /**
@@ -37,7 +50,28 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
+    protected array $casts = [
+        'created_at' => 'datetime',
+        'date_birth'=>'datetime'
     ];
+
+    public function getAgeAttribute(): int
+    {
+        $birth = $this->date_birth;
+
+        return date_diff($birth, Carbon::now())->y;
+    }
+
+    public function getFullNameAttribute(): string
+    {
+        return $this->first_name." ".$this->last_name;
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function addresses(): HasMany
+    {
+        return $this->hasMany(UserAddress::class,'user_id');
+    }
 }

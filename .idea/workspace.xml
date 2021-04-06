@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="899caaba-8bdd-47f0-98f5-786beba55c3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Actions/First/AddCostAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Actions/First/AddIncomeAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Enums/UsersGenderEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Actions/GetDistrictsFromRegionAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Actions/GetUsersAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Actions/GetUsersFromRegionAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/GetUserAddressResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/District.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Region.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserAddress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/DistrictFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/RegionFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/UserAddressFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ssd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ssd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/First/costs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/First/costs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/First/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/First/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Actions/First/AddCostAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Actions/AddCostAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Actions/First/AddIncomeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Actions/AddIncomeAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Actions/First/GetCostsAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Actions/GetCostsAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Actions/First/GetIncomesAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Actions/GetIncomesAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/IncomeFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/IncomeFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/First/costs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/First/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Income/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supervisord.log" beforeDir="false" afterPath="$PROJECT_DIR$/supervisord.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supervisord.pid" beforeDir="false" afterPath="$PROJECT_DIR$/supervisord.pid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,18 +202,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Actions/First" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Http\Actions" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\resources\views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Http\Actions\First" />
-      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\database\factories" />
-      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Models" />
-      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\resources\views\First\costs" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\public\js" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\public\css" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Http\Resources" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\app\Http\Actions" />
+      <recent name="\\wsl$\Ubuntu-20.04\home\jahongir\Projects\ssd\resources\views\User" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -187,7 +233,12 @@
       <workItem from="1617161219810" duration="2248000" />
       <workItem from="1617199971674" duration="37706000" />
       <workItem from="1617331332965" duration="70000" />
-      <workItem from="1617331435275" duration="5773000" />
+      <workItem from="1617331435275" duration="27616000" />
+      <workItem from="1617513990714" duration="1398000" />
+      <workItem from="1617517842030" duration="105000" />
+      <workItem from="1617536137314" duration="4184000" />
+      <workItem from="1617590481916" duration="21374000" />
+      <workItem from="1617645357444" duration="13136000" />
     </task>
     <task id="LOCAL-00001" summary="add layout, and welcome php">
       <created>1617245889928</created>
@@ -224,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617332815296</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added create incomes and costs">
+      <created>1617337678358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617337678358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +306,25 @@
     <MESSAGE value="added Incomes" />
     <MESSAGE value="added Costs" />
     <MESSAGE value="the first task is completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="the first task is completed" />
+    <MESSAGE value="Added create incomes and costs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added create incomes and costs" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617620431758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1617620431758" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1617593878134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617593878134" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1617679533039">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1617679533039" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1617635320489">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1617635320489" />
   </component>
 </project>

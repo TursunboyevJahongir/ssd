@@ -23,7 +23,7 @@ class IncomeFactory extends Factory
      */
     public function definition()
     {
-        $date = $this->faker->dateTimeBetween('-2 days');
+        $date = $this->faker->dateTimeBetween('-60 days');
         return [
             'name' => $this->faker->title,
             'price' => $this->faker->numberBetween(100000,10000000),
