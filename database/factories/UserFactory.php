@@ -30,6 +30,7 @@ class UserFactory extends Factory
             'last_name' => $this->faker->lastName,
             'gender' => $gender,
             'date_birth' => $this->faker->dateTimeBetween('-100 year')->format('Y-m-d'),
+            'prisoner' => $this->faker->boolean,
 //            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         ];
     }

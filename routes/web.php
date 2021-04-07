@@ -7,6 +7,8 @@ use App\Http\Actions\GetDistrictsFromRegionAction;
 use App\Http\Actions\GetIncomesAction;
 use App\Http\Actions\GetUsersAction;
 use App\Http\Actions\GetUsersFromRegionAction;
+use App\Http\Actions\PrisonerAction;
+use App\Http\Actions\PrisonersAction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,5 +32,7 @@ Route::post('income', AddIncomeAction::class)->name('add.income');
 Route::post('cost', AddCostAction::class)->name('add.cost');
 Route::get('costs/{date?}', GetCostsAction::class)->name('costs');
 Route::get('users/{region?}', GetUsersAction::class)->name('users.from.region');
+Route::get('prisoners/{law?}', PrisonersAction::class)->name('prisoners');
+Route::get('prisoner/{id}', PrisonerAction::class)->name('prisoner');
 Route::get('user/{region?}/{district?}', GetUsersFromRegionAction::class);
 //});

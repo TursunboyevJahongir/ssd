@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
- * Class Income
+ * Class User
  * @package App\Models
  * @property int $id
  * @property string $full_name
@@ -19,6 +19,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @property integer $age
  * @property Carbon $date_birth
  * @property UsersGenderEnum $gender
+ * @property UserAddress[] $addresses
+ * @property Prisoner[] $prisoner
  */
 class User extends Model
 {
@@ -34,6 +36,7 @@ class User extends Model
         'last_name',
         'gender',
         'date_birth',
+        'prisoner'
     ];
 
     /**
@@ -52,7 +55,8 @@ class User extends Model
      */
     protected array $casts = [
         'created_at' => 'datetime',
-        'date_birth'=>'datetime'
+        'date_birth' => 'datetime',
+        'prisoner' => 'boolean'
     ];
 
     public function getAgeAttribute(): int
@@ -64,7 +68,7 @@ class User extends Model
 
     public function getFullNameAttribute(): string
     {
-        return $this->first_name." ".$this->last_name;
+        return $this->first_name . " " . $this->last_name;
     }
 
     /**
@@ -72,6 +76,14 @@ class User extends Model
      */
     public function addresses(): HasMany
     {
-        return $this->hasMany(UserAddress::class,'user_id');
+        return $this->hasMany(UserAddress::class, 'user_id');
+    }
+
+    /**
+     * @return HasMany
+     */
+    public function prisoner(): HasMany
+    {
+        return $this->hasMany(Prisoner::class, 'user_id');
     }
 }

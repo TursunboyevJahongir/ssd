@@ -3,8 +3,11 @@
 namespace Database\Seeders;
 
 use App\Models\Cost;
+use App\Models\Crime;
 use App\Models\District;
 use App\Models\Income;
+use App\Models\Law;
+use App\Models\Prisoner;
 use App\Models\Region;
 use App\Models\User;
 use App\Models\UserAddress;
@@ -19,11 +22,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(50)->create();
-//        Income::factory(100)->create();
-//        Cost::factory(100)->create();
-//        Region::factory(20)->create();
-//        District::factory(50)->create();
+        User::factory(100)->create();
+        Income::factory(100)->create();
+        Cost::factory(100)->create();
+        Region::factory(20)->create();
+        District::factory(50)->create();
         UserAddress::factory(100)->create();
+        Law::factory(100)->create();
+        Prisoner::factory(50)->create();
+        Crime::factory(200)->create();
     }
 }

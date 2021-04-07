@@ -53,9 +53,10 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card bg-danger">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                            <h5 class="card-title">(Backend & Front)</h5>
+                            <p class="card-text">2.2) Qonunbuzarlar bazasi </p>
+                            <br>
+                            <a href="{{route('prisoners')}}" class="btn btn-dark">ko'rish</a>
                         </div>
                     </div>
                 </div>

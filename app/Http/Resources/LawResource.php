@@ -2,11 +2,11 @@
 
 namespace App\Http\Resources;
 
-use App\Models\User;
+use App\Models\Law;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class GetUserResource extends JsonResource
+class LawResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -17,14 +17,12 @@ class GetUserResource extends JsonResource
     public function toArray($request)
     {
         /**
-         * @var User $this
+         * @var Law $this
          */
         return [
             'id' => $this->id,
-            'full_name' => $this->full_name,
-            'age' => $this->age,
-            'date_birth' => $this->date_birth->format('d-M Y'),
-            'gender' => $this->gender,
+            'title' => $this->title,
+            'description' => $this->description,
         ];
     }
 }
